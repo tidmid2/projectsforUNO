@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{302B5326-225B-4A98-8703-60B8D6D7C316}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DeleteBaseInfo2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\..\Downloads\CreateReplic\MakeReplic.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DeleteBaseInfo2">
+        <MSBuild Projects="DeleteBaseInfo2.dproj"/>
+    </Target>
+    <Target Name="DeleteBaseInfo2:Clean">
+        <MSBuild Projects="DeleteBaseInfo2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DeleteBaseInfo2:Make">
+        <MSBuild Projects="DeleteBaseInfo2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MakeReplic">
+        <MSBuild Projects="..\..\..\..\Downloads\CreateReplic\MakeReplic.dproj"/>
+    </Target>
+    <Target Name="MakeReplic:Clean">
+        <MSBuild Projects="..\..\..\..\Downloads\CreateReplic\MakeReplic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MakeReplic:Make">
+        <MSBuild Projects="..\..\..\..\Downloads\CreateReplic\MakeReplic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DeleteBaseInfo2;MakeReplic"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DeleteBaseInfo2:Clean;MakeReplic:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DeleteBaseInfo2:Make;MakeReplic:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

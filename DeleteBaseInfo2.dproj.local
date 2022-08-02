@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.933,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.933,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.dfm=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.745,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo2.dproj</Transaction>
+    <Transaction>2022.02.03 11:47:42.340,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_DeleteBaseInfo2\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>

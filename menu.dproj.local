@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.933,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.dfm=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.148,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\default.txvpck</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.451,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\uJobFieldBlob.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.114,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\menu\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.504,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\menu.dproj=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.933,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.520,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.012,c:\users\elewlian\documents\embarcadero\studio\projects\modelsupport_deletebaseinfo2\default.txapackage=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.471,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\DeleteBaseInfo\default.txvpck</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.745,C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\DeleteBaseInfo2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.340,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_DeleteBaseInfo2\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.315,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\DeleteBaseInfo\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.726,=C:\Users\Elewlian\Documents\Embarcadero\Studio\Projects\ModelSupport_menu\menu\default.txvpck</Transaction>
+  </Transactions>
+</BorlandProject>

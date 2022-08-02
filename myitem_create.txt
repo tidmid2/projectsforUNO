@@ -1,0 +1,57 @@
+constructor MyItem.create(AOwner: TComponent);
+begin
+  inherited;
+  Self.Align:=alClient;
+  Self.BevelOuter:=bvNone;
+  Self.ShowCaption:=false;
+  Parent:=TWinControl(AOwner);
+
+  Img:=TImage.Create(Self);
+  Img.Stretch:=true;
+  Img.Align:=alClient;
+  Img.OnMouseDown:= crtClick;
+  Img.Parent:=Self;
+
+  Txt:=TLabel.Create(self);
+  Txt.Align:=alClient;
+  Txt.Alignment:=taCenter;
+  Txt.AlignWithMargins:=true;
+  Txt.Margins.Left:=trunc(10*fstMain.SizeKoof);
+  Txt.Margins.Right:=trunc(10*fstMain.SizeKoof);
+  Txt.Margins.Top:=trunc(10*fstMain.SizeKoof);
+  Txt.WordWrap:=true;
+  Txt.OnMouseDown:=crtClick;
+  Txt.Parent:=Self;
+
+  Cena:=TLabel.Create(Self);
+  Cena.Align:=alClient;
+  Cena.Alignment:=taCenter;
+  Cena.AlignWithMargins:=true;
+  Cena.Font.Color:=clWhite;
+  Cena.Font.Size:=trunc(20*fstMain.SizeKoof);
+  Cena.Margins.Bottom:=trunc(10*fstMain.SizeKoof);
+  Cena.Margins.Left:=trunc(10*fstMain.SizeKoof);
+  Cena.Margins.Right:=trunc(10*fstMain.SizeKoof);
+  Cena.Margins.Top:=trunc(85*fstMain.SizeKoof);
+  Cena.OnMouseDown:=crtClick;
+  Cena.Parent:=Self;
+
+  Stop:=TImage.Create(Self);
+  Stop.Canvas.Brush.Color:=RGB(47,112,217);
+  Stop.Canvas.Rectangle(0,0,32,32);
+  fstMain.cxImageList3.GetBitmap(0,Stop.Picture.Bitmap);
+  Stop.Stretch:=true;
+  Stop.Left:=trunc(15*fstMain.SizeKoof);
+  Stop.Height:=32;
+  Stop.Width:=32;
+  Stop.Parent:=Self;
+  Stop.Transparent:=true;
+  Stop.Visible:=false;
+end;
+
+
+destructor MyItem.destroy;
+begin
+
+  inherited;
+end;

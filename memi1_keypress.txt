@@ -1,0 +1,46 @@
+procedure TfstMain.Memo1KeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+  begin
+   if Panel9.Tag = 0 then
+     begin
+      dm.Orders_item.Edit;
+      dm.Orders_itemCOMMENTS.AsString := Memo1.Lines.Strings[0];
+      dm.Orders_item.Post;
+      Panel9.Visible := false;
+     end
+   else if Panel9.Tag = 1 then
+     begin
+      if Memo1.Lines.Strings[0] <> '' then
+        begin
+         Menu_items.Filter:='upper('+Menu_itemsCAPTION.FieldName+') like ''%'+AnsiUpperCase(Memo1.Lines.Strings[0])+'%''';
+         SrollStep:=0;
+         Paint_menugrid;
+        end;
+      Panel9.Visible := false;
+     end;
+  end
+else if Panel9.Tag = 1 then
+ begin
+   if Length(Memo1.Lines.Strings[0]) > 0 then
+        begin
+          if key = #8 then
+           begin
+            if length(Memo1.Lines.Strings[0])>1 then
+              begin
+                var str:=Memo1.Lines.Strings[0];
+                delete(str,length(str),1);
+                Menu_items.Filter:='upper('+Menu_itemsCAPTION.FieldName+') like ''%'+AnsiUpperCase(str)+'%''';
+              end
+            else begin
+             if PodrazdID = 0 then
+                Menu_items.Filter:=Menu_itemsPID.FieldName+' is null'
+             else Menu_items.Filter:=Menu_itemsPID.FieldName+' = '+PodrazdID.ToString;
+            end;
+           end
+          else Menu_items.Filter:='upper('+Menu_itemsCAPTION.FieldName+') like ''%'+AnsiUpperCase(Memo1.Lines.Strings[0]+Key)+'%''';
+          SrollStep:=0;
+          Paint_menugrid;
+        end;
+ end;
+end;

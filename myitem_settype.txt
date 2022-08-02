@@ -1,0 +1,31 @@
+procedure MyItem.SetType(AValue: byte);
+begin
+
+ FCardType:=AValue;
+ if AValue = 0 then
+  Self.Visible:=false
+ else
+  begin
+   Self.Visible:=true;
+  if AValue = 1 then   //folder
+   begin
+    Txt.Font.Size:=trunc(20*fstMain.SizeKoof);
+    Txt.Font.Color:=clWhite;
+    Txt.Margins.Bottom:=trunc(10*fstMain.SizeKoof);;
+    Cena.Visible:=false;
+    Img.Picture.Bitmap:=nil;
+    fstMain.cxImageList1.GetBitmap(0,Img.Picture.Bitmap);
+    Stop.Top:=Self.Height-Stop.Height-trunc(10*fstMain.SizeKoof);
+   end
+  else
+   begin
+    Txt.Font.Size:=trunc(14*fstMain.SizeKoof);
+    Txt.Font.Color:=$00C06B5C;
+    Txt.Margins.Bottom:=trunc(55*fstMain.SizeKoof);
+    Cena.Visible:=true;
+    Img.Picture.Bitmap:=nil;
+    fstMain.cxImageList1.GetBitmap(1,Img.Picture.Bitmap);
+    Stop.Top:=Self.Height-Stop.Height-trunc(10*fstMain.SizeKoof);
+   end;
+  end;
+end;
